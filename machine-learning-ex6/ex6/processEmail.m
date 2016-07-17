@@ -98,8 +98,10 @@ while ~isempty(email_contents)
     %
 
 
-
-
+    index = strmatch( str, vocabList, 'exact');
+    if( ~isempty(index) )  
+       word_indices = [ word_indices; index ];
+    end;   
 
 
 

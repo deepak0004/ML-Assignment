@@ -16,8 +16,10 @@ sim = 0;
 %
 %
 
+opop = ( x1 - x2 ).^2;
+opop = opop/(2*sigma*sigma);
 
-
+sim = exp( -sum( opop ) );
 
 
 

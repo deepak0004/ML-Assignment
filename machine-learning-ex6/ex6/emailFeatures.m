@@ -48,8 +48,10 @@ x = zeros(n, 1);
 %
 %
 
-
-
+opop = size( word_indices );
+for i = 1:opop
+    x( word_indices(i) ) = 1;
+end;    
 
 
 
